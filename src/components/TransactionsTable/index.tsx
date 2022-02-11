@@ -7,6 +7,7 @@ export function TransactionsTable() {
 
   useEffect(() => {
     refreshData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

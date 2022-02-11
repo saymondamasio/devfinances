@@ -55,6 +55,7 @@ Technologies that I used to develop this web client
 - [React Modal](https://reactcommunity.org/react-modal/)
 - [React Dropzone](https://react-dropzone.js.org/)
 - [React Hot Toast](https://react-hot-toast.com/)
+- [Styled Components](https://styled-components.com/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 

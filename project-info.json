@@ -50,6 +50,10 @@
       "url": "https://next-auth.js.org/"
     },
     {
+      "name": "Styled Components",
+      "url": "https://styled-components.com/"
+    },
+    {
       "name": "Eslint",
       "url": "https://eslint.org/"
     },
