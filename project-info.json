@@ -1,0 +1,61 @@
+{
+  "name": "DevFinances",
+  "videos": [
+    "https://raw.githubusercontent.com/saymondamasio/moveit/main/.github/demonstration.mp4"
+  ],
+  "images": [
+    "https://raw.githubusercontent.com/saymondamasio/moveit/main/.github/screenshot-1.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/moveit/main/.github/screenshot-2.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/moveit/main/.github/screenshot-3.jpg",
+    "https://raw.githubusercontent.com/saymondamasio/moveit/main/.github/screenshot-4.jpg"
+  ],
+  "description": "Essa aplicação tem como objetivo controlar suas finanças trazendo o balanço de todas as entradas e saídas, a adição de transações é feita por meio de um arquivo csv com as informações de titulo, valor, categoria e data, nessa ordem.",
+  "short_description": "Uma aplicação web para controlar suas finanças",
+  "link_preview": "https://moveit-damasio.vercel.app",
+  "techs": [
+    {
+      "name": "Next.js",
+      "url": "https://nextjs.org/"
+    },
+    {
+      "name": "Typescript",
+      "url": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "Mongo",
+      "url": "https://www.mongodb.com/"
+    },
+    {
+      "name": "Axios",
+      "url": "https://axios-http.com/"
+    },
+    {
+      "name": "Papa Parse",
+      "url": "https://www.papaparse.com"
+    },
+    {
+      "name": "React Modal",
+      "url": "https://reactcommunity.org/react-modal/"
+    },
+    {
+      "name": "React Dropzone",
+      "url": "https://react-dropzone.js.org/"
+    },
+    {
+      "name": "React Hot Toast",
+      "url": "https://react-hot-toast.com/"
+    },
+    {
+      "name": "Next Auth",
+      "url": "https://next-auth.js.org/"
+    },
+    {
+      "name": "Eslint",
+      "url": "https://eslint.org/"
+    },
+    {
+      "name": "Prettier",
+      "url": "https://prettier.io/"
+    }
+  ]
+}

@@ -8,26 +8,23 @@ export default function Login() {
       <Head>
         <title>Login | dev.finances</title>
       </Head>
-      <div>
-        <img src="assets/background-login.svg" alt="" />
+      <main>
+        <img src="assets/logo.svg" alt="" />
 
-        <main>
-          <img src="assets/logo.svg" alt="" />
-
-          <h1>Bem-vindo</h1>
-          <button
-            type="button"
-            onClick={() =>
-              signIn('google', {
-                callbackUrl: `${window.location.origin}/`,
-              })
-            }
-          >
-            <img src="assets/google.svg" alt="Google" />
-            Crie sua sala com o Google
-          </button>
-        </main>
-      </div>
+        <h1>Bem-vindo</h1>
+        <p>Controle suas finanças agora mesmo</p>
+        <button
+          type="button"
+          onClick={() =>
+            signIn('google', {
+              callbackUrl: `${window.location.origin}/`,
+            })
+          }
+        >
+          <img src="assets/google.svg" alt="Google" />
+          Faça login com sua conta Google
+        </button>
+      </main>
     </Container>
   )
 }

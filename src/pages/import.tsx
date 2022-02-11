@@ -1,5 +1,6 @@
 import { isDate, parse } from 'date-fns'
 import type { GetServerSideProps, NextPage } from 'next'
+import Head from 'next/head'
 import Papa from 'papaparse'
 import { FormEvent, useState } from 'react'
 import { useDropzone } from 'react-dropzone'
@@ -117,6 +118,9 @@ const Import: NextPage = () => {
 
   return (
     <Container>
+      <Head>
+        <title>Import | dev.finances</title>
+      </Head>
       <Header style={{ height: 92 }} />
 
       <Main>

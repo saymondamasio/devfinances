@@ -6,13 +6,13 @@ import { GlobalStyle } from '../styles/global'
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
-    <TransactionsProvider>
-      <SessionProvider session={session}>
+    <SessionProvider session={session}>
+      <TransactionsProvider>
         <Component {...pageProps} />
-      </SessionProvider>
-      <GlobalStyle />
-      <Toaster />
-    </TransactionsProvider>
+        <GlobalStyle />
+        <Toaster />
+      </TransactionsProvider>
+    </SessionProvider>
   )
 }
 

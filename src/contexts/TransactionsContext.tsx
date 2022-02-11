@@ -1,3 +1,4 @@
+import { useSession } from 'next-auth/react'
 import { createContext, ReactNode, useEffect, useState } from 'react'
 import { api } from '../services/api'
 
@@ -28,8 +29,10 @@ export const TransactionsContext = createContext<TransactionsContextData>(
 
 export function TransactionsProvider({ children }: Props) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
+  const { data } = useSession()
+
   useEffect(() => {
-    refreshData()
+    if (data) refreshData()
   }, [])
 
   function refreshData() {
