@@ -9,7 +9,7 @@ export default function Login() {
         <title>Login | dev.finances</title>
       </Head>
       <main>
-        <img src="assets/logo.svg" alt="" />
+        <img src="assets/logo.svg" alt="DevFinances" />
 
         <h1>Bem-vindo</h1>
         <p>Controle suas finanças agora mesmo</p>
