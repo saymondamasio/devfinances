@@ -8,7 +8,7 @@
 
 <p align="center">Uma aplicação web para controlar suas finanças</p>
 
-https://user-images.githubusercontent.com/50559834/152693030-7f13a761-90c0-49c9-834d-686bcf115228.mp4
+https://user-images.githubusercontent.com/50559834/153626703-e96dc2a4-9636-437d-b4e6-080187e29e67.mp4
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/saymondamasio/devfinances">
