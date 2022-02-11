@@ -11,7 +11,7 @@
   ],
   "description": "Essa aplicação tem como objetivo controlar suas finanças trazendo o balanço de todas as entradas e saídas, a adição de transações é feita por meio de um arquivo csv com as informações de titulo, valor, categoria e data, nessa ordem.",
   "short_description": "Uma aplicação web para controlar suas finanças",
-  "link_preview": "https://moveit-damasio.vercel.app",
+  "link_preview": "https://devfinances-damasio.vercel.app",
   "techs": [
     {
       "name": "Next.js",
