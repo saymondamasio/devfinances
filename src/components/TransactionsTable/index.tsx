@@ -1,8 +1,13 @@
+import { useEffect } from 'react'
 import { useTransactions } from '../../hooks/useTransactions'
 import { Container } from './styles'
 
 export function TransactionsTable() {
-  const { transactions } = useTransactions()
+  const { transactions, refreshData } = useTransactions()
+
+  useEffect(() => {
+    refreshData()
+  }, [])
 
   return (
     <Container>
@@ -18,7 +23,7 @@ export function TransactionsTable() {
 
         <tbody>
           {transactions.map(transaction => (
-            <tr key={transaction.id}>
+            <tr key={transaction._id}>
               <td>{transaction.title}</td>
               <td className={transaction.type}>
                 {Intl.NumberFormat('pt-BR', {

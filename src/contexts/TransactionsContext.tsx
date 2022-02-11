@@ -2,7 +2,7 @@ import { createContext, ReactNode, useEffect, useState } from 'react'
 import { api } from '../services/api'
 
 interface Transaction {
-  id: number
+  _id: number
   title: string
   amount: number
   type: 'deposit' | 'withdraw'
@@ -18,6 +18,7 @@ interface Props {
 
 interface TransactionsContextData {
   transactions: Transaction[]
+  refreshData: () => void
   createTransaction: (transaction: CreateTransaction) => Promise<void>
 }
 
@@ -28,6 +29,10 @@ export const TransactionsContext = createContext<TransactionsContextData>(
 export function TransactionsProvider({ children }: Props) {
   const [transactions, setTransactions] = useState<Transaction[]>([])
   useEffect(() => {
+    refreshData()
+  }, [])
+
+  function refreshData() {
     api.get('transactions').then(response => {
       const parsedTransactions = response.data.map((transaction: any) => ({
         ...transaction,
@@ -36,7 +41,7 @@ export function TransactionsProvider({ children }: Props) {
       }))
       setTransactions(parsedTransactions)
     })
-  }, [])
+  }
 
   async function createTransaction(transactionInput: CreateTransaction) {
     const response = await api.post('transactions', {
@@ -55,6 +60,7 @@ export function TransactionsProvider({ children }: Props) {
       value={{
         transactions,
         createTransaction,
+        refreshData,
       }}
     >
       {children}

@@ -114,6 +114,22 @@ export const Main = styled.div`
 
         color: #ffffff;
       }
+
+      button:disabled {
+        opacity: 0.8;
+        cursor: not-allowed;
+      }
+    }
+
+    ul.errors {
+      margin-top: 25px;
+      color: red;
+      align-self: flex-start;
+      list-style-position: inside;
+      list-style-type: none;
+      ul {
+        margin-left: 20px;
+      }
     }
   }
 `
